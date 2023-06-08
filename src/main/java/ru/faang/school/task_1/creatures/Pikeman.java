@@ -3,7 +3,12 @@ package ru.faang.school.task_1.creatures;
 import ru.faang.school.task_1.Creature;
 
 public class Pikeman extends Creature {
+    private static int level = 6;
+    private static int attack = 5;
+    private static int defence = 3;
+    private static int speed = 2;
+    private static int amount = 10;
     public Pikeman() {
-        super("pikeman", 6, 5, 3, 2, 10);
+        super("pikeman",  level, attack, defence, speed, amount);
     }
 }

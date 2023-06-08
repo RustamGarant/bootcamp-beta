@@ -9,6 +9,12 @@ public abstract class Creature {
     private int amount;
 
     public Creature(String name, int level, int attack, int defence, int speed, int amount) {
+        if(name.equals("")) System.out.println("Введите имя");
+        if(attack < 0) System.out.println("Аттака не может быть меньше нуля");
+        if(defence < 0) System.out.println("Защита не может быть меньше нуля");
+        if(speed < 0) System.out.println("Скорость не может быть меньше нуля");
+        if(amount < 0) System.out.println("Количиство юнитов не может быть меньше нуля");
+
         this.name = name;
         this.level = level;
         this.attack = attack;

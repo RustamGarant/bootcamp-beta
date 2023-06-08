@@ -51,4 +51,8 @@ public class Hero {
                 " and level " + level +
                 " has army= " + army;
     }
+
+    public String getName() {
+        return name;
+    }
 }

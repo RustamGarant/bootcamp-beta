@@ -3,7 +3,12 @@ package ru.faang.school.task_1.creatures;
 import ru.faang.school.task_1.Creature;
 
 public class Angel extends Creature {
+    private static int level = 8;
+    private static int attack = 7;
+    private static int defence = 2;
+    private static int speed = 4;
+    private static int amount = 10;
     public Angel() {
-        super("angel", 8, 7, 2, 4, 10);
+        super("angel", level, attack, defence, speed, amount);
     }
 }
